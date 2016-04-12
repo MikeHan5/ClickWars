@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CountWars</title>
+	<script type="text/javascript">
+		function vote(x) {
+			var count = document.getElementById("count").innerHTML;
+			if(x == '+'){
+				count++;
+			}
+			else{
+				count--;
+			}
+
+			document.getElementById("count").innerHTML = count;
+		}
+
+	</script>
+</head>
+
+<body>
+	<span id='count'>0</span>
+  	<button onclick="vote('+')">+</button>
+  	<button onclick="vote('-')">-</button>
+</body>
+</html>
